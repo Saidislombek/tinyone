@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css"> 
+  <!-- CSS3 Animation -->
+  <link rel="stylesheet" href="css/animate.css"
+  />
+  <!-- Custom CSS3 -->
+  <link rel="stylesheet" type="text/css" href="css/main.css"> 
+  <title>Tinyone</title>
+</head>
+
+<!-- SVG Sprite -->
+<svg  style="display: none;"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol id="apple" viewBox="0 0 512.003 512.003">
+    <g>
+      <path d="M351.98,0c-27.296,1.888-59.2,19.36-77.792,42.112c-16.96,20.64-30.912,51.296-25.472,81.088
+      c29.824,0.928,60.64-16.96,78.496-40.096C343.916,61.568,356.556,31.104,351.98,0z"/>
+    </g>
+
+    <g>
+      <path d="M459.852,171.776c-26.208-32.864-63.04-51.936-97.824-51.936c-45.92,0-65.344,21.984-97.248,21.984
+      c-32.896,0-57.888-21.92-97.6-21.92c-39.008,0-80.544,23.84-106.88,64.608c-37.024,57.408-30.688,165.344,29.312,257.28
+      c21.472,32.896,50.144,69.888,87.648,70.208c33.376,0.32,42.784-21.408,88-21.632c45.216-0.256,53.792,21.92,87.104,21.568
+      c37.536-0.288,67.776-41.28,89.248-74.176c15.392-23.584,21.12-35.456,33.056-62.08
+      C387.852,342.624,373.932,219.168,459.852,171.776z"/>
+    </g>
+  </symbol>
+
+  <symbol id="android" viewBox="0 0 512.034 512.034">
+    <g>
+      <path d="M362.684,192.034H149.35c-5.888,0-10.667,4.779-10.667,10.667v170.667c0,25.771,18.347,47.296,42.667,52.267v54.4
+      c0,17.643,14.357,32,32,32c17.643,0,32-14.357,32-32v-53.333h21.333v53.333c0,17.643,14.357,32,32,32s32-14.357,32-32v-54.4
+      c24.32-4.949,42.667-26.496,42.667-52.267V202.701C373.35,196.792,368.572,192.034,362.684,192.034z"/>
+    </g>
+
+    <g>
+      <path d="M311.846,56.845l17.984-41.963c2.325-5.419-0.192-11.669-5.611-13.995c-5.355-2.347-11.691,0.171-13.995,5.611
+      l-17.984,41.984c-11.413-3.712-23.573-5.781-36.203-5.781c-12.629,0-24.789,2.069-36.203,5.781L201.809,6.498
+      c-2.304-5.44-8.64-7.979-13.995-5.611c-5.419,2.325-7.915,8.597-5.589,13.995l17.984,41.963
+      c-36.629,19.883-61.525,58.688-61.525,103.189c0,5.888,4.779,10.667,10.667,10.667h213.333c5.888,0,10.667-4.779,10.667-10.667
+      C373.35,115.533,348.454,76.728,311.846,56.845z M213.35,128.034c-5.888,0-10.667-4.779-10.667-10.667s4.779-10.667,10.667-10.667
+      s10.667,4.779,10.667,10.667S219.238,128.034,213.35,128.034z M298.684,128.034c-5.888,0-10.667-4.779-10.667-10.667
+      s4.779-10.667,10.667-10.667s10.667,4.779,10.667,10.667S304.572,128.034,298.684,128.034z"/>
+    </g>
+    <g>
+      <path d="M426.684,192.034c-17.643,0-32,14.357-32,32v106.667c0,17.643,14.357,32,32,32c17.643,0,32-14.357,32-32V224.034
+      C458.684,206.392,444.327,192.034,426.684,192.034z"/>
+    </g>
+
+
+    <g>
+      <path d="M85.35,192.034c-17.643,0-32,14.357-32,32v106.667c0,17.643,14.357,32,32,32c17.643,0,32-14.357,32-32V224.034
+      C117.35,206.392,102.993,192.034,85.35,192.034z"/>
+
+    </g>
+  </symbol>
+  <symbol id="windows" viewBox="0 0 512 512">
+    <g>
+      <polygon points="0,80 0,240 224,240 224,52"/>
+    </g>
+    <g><polygon points="256,48 256,240 512,240 512,16"/></g>
+    <g><polygon points="256,272 256,464 512,496 512,272"/></g>
+    <g><polygon points="0,272 0,432 224,460 224,272"/></g>
+  </symbol>
+</svg>
+
+
+<body>   
+  <!-- header id="header" -->
+  <header class="header" id="ex1">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="images/logo.png" class="logo animate__animated animate__zoomIn">          
+        </div>
+        <div class="col-lg-5 ml-auto">
+          <nav>
+            <ul class="menu d-flex justify-content-center">
+              <li class="menu__item"><a href="#ex1">Features</a></li>
+              <li class="menu__item"><a href="#ex2">Blog</a></li>
+              <li class="menu__item"><a href="#ex3">Supports</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="offer">
+            <h1 class="offer__title">Inspire your inspiration</h1>
+            <div class="offer__intro">
+              Simple to use for your app, products<br> showcase and your inspiration
+            </div>
+            <p class="offer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit </p>
+            <ul class="icons">
+              <li><svg class="icon animate__animated animate__lightSpeedInLeft"><use xlink:href="#apple"></use></svg></li>              
+              <li><svg class="icon animate__animated animate__lightSpeedInLeft"><use xlink:href="#android"></use></svg></li>
+              <li><svg class="icon animate__animated animate__lightSpeedInLeft"><use xlink:href="#windows"></use></svg></li>
+            </ul>
+          </div>          
+        </div>
+        <div class="col-lg-5 ml-auto">
+          <img src="images/ipad-new.png" class="ipad animate__animated animate__zoomIn">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+
+  <!-- features id="features" -->
+  <div class="features" id="ex2">
+   <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title">
+          <h2 class="title__main">Tinyone features</h2>
+          <p class="title__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus<br>tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row boxs">
+
+      <div class="col-lg-4">
+        <div class="features d-flex">
+          <img class="features__icon" src="images/features-icon/3.png">
+          <div class="features__block">
+            <h3 class="features__title">Fully Responsive</h3>
+            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="features d-flex">
+          <img class="features__icon" src="images/features-icon/5.png">
+          <div class="features__block">
+            <h3 class="features__title">Fully Layered PSD</h3>
+            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="features d-flex">
+          <img class="features__icon" src="images/features-icon/4.png">
+          <div class="features__block">
+            <h3 class="features__title">Font Awesome Icons</h3>
+            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="features d-flex">
+          <img class="features__icon" src="images/features-icon/6.png">
+          <div class="features__block">
+            <h3 class="features__title">HTML3 & CSS3</h3>
+            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="features d-flex">
+          <img class="features__icon" src="images/features-icon/2.png">
+          <div class="features__block">
+            <h3 class="features__title">Email Template</h3>
+            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="features d-flex">
+          <img class="features__icon" src="images/features-icon/1.png">
+          <div class="features__block">
+            <h3 class="features__title">Free to download</h3>
+            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- /features -->
+
+<!-- touch id="touch" -->
+<div class="touch" id="ex3">
+ <div class="container">
+  <div class="col-lg-12">
+    <div class="touch__title">
+      <h2 class="touch__main yellow">Keep in touch with us</h2>
+      <p class="touch__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-10 ml-auto">
+      <form class="form-inline" action="#">              
+        <div class="form-group">                
+          <input required type="email" class="form-input" placeholder="Enter your email to update">
+        </div>
+        <button type="submit" class="form__btn">submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<!-- /touch -->
+
+<!-- footer id="footer" -->
+<footer class="footer">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+     <div class="credits">
+      HALOVIETNAM LTD
+      66, Dang Van ngu, Dong Da
+      Hanoi, Vietnam
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+<!-- /footer -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.5.1.min.js"></script>    
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
